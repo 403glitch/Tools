@@ -59,6 +59,7 @@ The Harvester  -  to id Usernames , email and subdomains
 • Acunetix  (Vulnerability Scanner)
 • Qualys    (Vulnerability Scanner)
 • Netspark  (Vulnerability Scanner)
+• OpenVAS
 
 - Directory Busting
 • DirBuster
@@ -143,15 +144,6 @@ The Harvester  -  to id Usernames , email and subdomains
 • hashdump  (meterpreter)
 • cewl  ( pulls down words from a blog)
 • DNSCewl
-
-- BufferOverflow
-• generic_send_tcp   (spiking)
-• 
-• 
-• 
-• 
-• 
-• 
 
 
 - Transferring an Exploit from Attacker Server to Target Windows Machine as an ".exe" Script
